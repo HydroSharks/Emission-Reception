@@ -1,7 +1,8 @@
 import serial
 
 # Configuration du port série
-port = 'COM12'  # Changez selon votre système (ex : COM4 sur Windows)
+# port = 'COM12'  # Changez selon votre système (ex : COM4 sur Windows)
+port = '/dev/ttyUSB0'  # Changez selon votre système (ex : COM4 sur Windows)
 baudrate = 9600
 
 ser = serial.Serial(port, baudrate, timeout=1)
