@@ -2,7 +2,9 @@ import serial
 import time
 
 # Configuration du port série
-port = 'COM5'  # Changez selon votre système (ex : COM3 sur Windows)
+# port = 'COM5'  # Changez selon votre système (ex : COM3 sur Windows)
+port = '/dev/ttyUSB0'  # Changez selon votre système (ex : COM4 sur Windows)
+
 baudrate = 9600
 
 ser = serial.Serial(port, baudrate, timeout=1)
