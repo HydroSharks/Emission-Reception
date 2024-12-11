@@ -15,7 +15,7 @@ try:
         message = "Hello LoRa, message envoyé à " + str(time.time())
         ser.write(message.encode())  # Envoie le message
         print(f"Envoyé : {message}")
-        time.sleep(2)  # Attendre 2 secondes avant d'envoyer un autre message
+        # time.sleep(2)  # Attendre 2 secondes avant d'envoyer un autre message
 except KeyboardInterrupt:
     print("Arrêt de l'émetteur.")
 finally:
